@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BubbleSort
+namespace Sort
 {
-    internal class BubbleSort
+    public class BubbleSort
     {
         private IList<int> listToSort;
         public BubbleSort(IList<int> listToSort) 
