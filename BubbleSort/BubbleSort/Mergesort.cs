@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BubbleSort
+namespace Sort
 {
     internal class MergeSort
     {
@@ -44,7 +44,7 @@ namespace BubbleSort
 
                 while (l < leftArray.Length && r < rightArray.Length)
                 {
-                    if (leftArray[l] <= rightArray[r])
+                    if (leftArray[l] <= rightArray[])
                     {
                         sortedArray[s] = leftArray[l];
                         s++;
