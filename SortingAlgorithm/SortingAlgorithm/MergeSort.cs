@@ -40,37 +40,31 @@ namespace SortingAlgorithm
 
         void Sorting(int[] sortedArray, int[] leftArray, int[] rightArray)
         {
-            {
-                int s = 0, r = 0, l = 0;
+            int s = 0, r = 0, l = 0;
 
-                while (l < leftArray.Length && r < rightArray.Length)
-                {
-                    if (leftArray[l] <= rightArray[])
-                    {
-                        sortedArray[s] = leftArray[l];
-                        s++;
-                        l++;
-                    }
-                    else
-                    {
-                        sortedArray[s] = rightArray[r];
-                        s++;
-                        r++;
-                    }
-                }
-                while (l < leftArray.Length)
+            while (l < leftArray.Length && r < rightArray.Length)
+            {
+                if (leftArray[l] <= rightArray[r])
                 {
                     sortedArray[s] = leftArray[l];
-                    s++;
-                    l++;
+                    s++; l++;
                 }
-                while (r < rightArray.Length)
+                else
                 {
                     sortedArray[s] = rightArray[r];
-                    s++;
-                    r++;
+                    s++; r++;
                 }
             }
+            while (l < leftArray.Length)
+            {
+                sortedArray[s] = leftArray[l];
+                s++; l++;
+            }
+            while (r < rightArray.Length)
+            {
+                sortedArray[s] = rightArray[r];
+                s++; r++; 
+            } 
         }
     }
 }
